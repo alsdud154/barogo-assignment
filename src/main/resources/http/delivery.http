@@ -1,0 +1,12 @@
+### 배달 조회
+GET http://localhost:8080/v1/deliveries?startDate=2025-03-25&endDate=2025-03-26
+Authorization: {{Authorization}}
+
+### 배달 주소 수정
+PATCH http://localhost:8080/v1/deliveries/1
+Authorization: {{Authorization}}
+Content-Type: application/json
+
+{
+    "address": "test"
+}

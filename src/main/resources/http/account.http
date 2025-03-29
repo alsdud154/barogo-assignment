@@ -1,0 +1,22 @@
+### 회원가입
+POST http://localhost:8080/v1/account/sign-up
+Content-Type: application/json
+
+{
+    "username": "barogo",
+    "password": "test1234!!!!",
+    "name": "바로고"
+}
+
+### 로그인
+POST http://localhost:8080/v1/account/sign-in
+Content-Type: application/json
+
+{
+    "username": "barogo",
+    "password": "test1234!!!!"
+}
+
+> {%
+        client.global.set("Authorization", "Bearer " + response.body.accessToken);
+%}

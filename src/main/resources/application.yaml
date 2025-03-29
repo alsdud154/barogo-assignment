@@ -1,0 +1,10 @@
+spring:
+  messages:
+    basename: messages, errors
+
+  jpa:
+    show-sql: true
+  hibernate:
+    ddl-auto: none
+jwt:
+  secret-key: aodhsighsidhfgaisfhisadhfaosdfhaosdhfoashfsaufhasifhsaifd
